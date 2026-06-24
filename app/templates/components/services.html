@@ -1,0 +1,44 @@
+{% from "components/icons.html" import globe, robot, chat, rocket, cog, bolt %}
+<section id="services" class="relative py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="text-primary text-sm font-semibold tracking-wider uppercase">What We Do</span>
+            <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-4">Solutions That Drive Growth</h2>
+            <p class="text-light/50 max-w-2xl mx-auto">From websites to AI agents — we build systems that work while you focus on what matters.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% set services = [
+                {"icon": "globe", "title": "Website Development", "desc": "High-performance websites with modern stacks. Fast, responsive, conversion-optimized.", "demo": "/demo/web-development"},
+                {"icon": "robot", "title": "AI Agents & Automation", "desc": "Custom AI agents that automate workflows, handle tasks, and scale your operations.", "demo": "/demo/ai-agents"},
+                {"icon": "chat", "title": "Chatbots", "desc": "Intelligent conversational AI for customer support, lead gen, and internal tools.", "demo": "/demo/chatbots"},
+                {"icon": "rocket", "title": "SaaS MVP Development", "desc": "Rapid SaaS prototyping and development. From idea to working product in weeks.", "demo": "/demo/saas-mvp"},
+                {"icon": "cog", "title": "Business Automation", "desc": "End-to-end automation for repetitive tasks, data processing, and biz operations.", "demo": "/demo/business-automation"},
+                {"icon": "bolt", "title": "Maintenance & Support", "desc": "Ongoing support, monitoring, and optimization to keep your systems running.", "demo": "/demo/maintenance-support"},
+            ] %}
+            {% for service in services %}
+            <div class="service-card group relative p-6 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] transition-all duration-500 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5">
+                <div class="w-12 h-12 mb-4 text-primary group-hover:scale-110 transition-transform duration-300">
+                    {% if service.icon == "globe" %}{{ globe("w-full h-full") }}
+                    {% elif service.icon == "robot" %}{{ robot("w-full h-full") }}
+                    {% elif service.icon == "chat" %}{{ chat("w-full h-full") }}
+                    {% elif service.icon == "rocket" %}{{ rocket("w-full h-full") }}
+                    {% elif service.icon == "cog" %}{{ cog("w-full h-full") }}
+                    {% elif service.icon == "bolt" %}{{ bolt("w-full h-full") }}
+                    {% endif %}
+                </div>
+                <h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">{{ service.title }}</h3>
+                <p class="text-light/50 text-sm leading-relaxed">{{ service.desc }}</p>
+                <div class="mt-4 flex items-center justify-between">
+                    <div class="w-8 h-0.5 bg-primary/50 group-hover:w-12 transition-all duration-300"></div>
+                    <a href="{{ service.demo }}" target="_blank" rel="noopener noreferrer" class="text-xs text-light/40 hover:text-primary flex items-center gap-1.5 transition-colors">
+                        View Demo
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

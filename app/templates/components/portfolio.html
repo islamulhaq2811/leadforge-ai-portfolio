@@ -1,0 +1,43 @@
+<section id="portfolio" class="relative py-24 md:py-32 bg-dark/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="text-primary text-sm font-semibold tracking-wider uppercase">Our Work</span>
+            <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-4">Work That Speaks For Itself</h2>
+            <p class="text-light/50 max-w-2xl mx-auto">Click any project to preview the full design.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            {% set projects = [
+                {"img": "AI Customer Support Chatbot.png", "title": "AI Customer Support Chatbot", "category": "AI Chatbots", "desc": "24/7 intelligent support handling 90% of inquiries automatically. Built with GPT-4 + custom knowledge base.", "color": "from-primary/20 to-accent/10", "demo": "/demo/chatbots"},
+                {"img": "Invoice Automation System.png", "title": "Invoice Automation System", "category": "Business Automation", "desc": "Full-cycle invoice processing: extraction, validation, approval, and payment — 15x faster.", "color": "from-accent/20 to-primary/10", "demo": "/demo/business-automation"},
+                {"img": "Real-Time Analytics Dashboard.png", "title": "Real-Time Analytics Dashboard", "category": "SaaS Dashboards", "desc": "Live KPI tracking with AI-driven insights. Used by 3 growing startups for data-driven decisions.", "color": "from-primary/20 to-accent/5", "demo": "/demo/saas-mvp"},
+                {"img": "Multi-Vendor E-Commerce.png", "title": "Multi-Vendor E-Commerce", "category": "E-Commerce", "desc": "Scalable marketplace platform with automated vendor management, payments, and inventory sync.", "color": "from-accent/20 to-primary/15", "demo": "/demo/web-development"},
+                {"img": "Modern Agency Landing Page.png", "title": "Modern Agency Landing Page", "category": "Website Development", "desc": "Conversion-optimized landing page with hero, features, and responsive design.", "color": "from-primary/20 to-accent/10", "demo": "/demo/web-development"},
+                {"img": "Secure Client Login Portal.png", "title": "Secure Client Login Portal", "category": "Login Portal", "desc": "Modern authentication interface with social login, validation, and responsive design.", "color": "from-accent/20 to-primary/10", "demo": "/demo/login-portal"},
+            ] %}
+            {% for project in projects %}
+            <div class="project-card group relative rounded-2xl border border-white/5 bg-white/[0.02] overflow-hidden hover:border-primary/30 transition-all duration-500">
+                <div class="absolute inset-0 bg-gradient-to-br {{ project.color }} opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="relative h-56 overflow-hidden cursor-pointer image-preview-trigger" data-src="/static/images/{{ project.img | urlencode }}" data-title="{{ project.title }}">
+                    <img src="/static/images/{{ project.img | urlencode }}" alt="{{ project.title }}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
+                        <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary text-dark text-xs font-bold px-4 py-2 rounded-lg">
+                            Click to Preview
+                        </div>
+                    </div>
+                </div>
+                <div class="relative p-8">
+                    <span class="text-xs text-primary font-semibold tracking-wider uppercase">{{ project.category }}</span>
+                    <h3 class="text-2xl font-bold mt-2 mb-3">{{ project.title }}</h3>
+                    <p class="text-light/50 text-sm leading-relaxed mb-6">{{ project.desc }}</p>
+                    <a href="{{ project.demo }}" target="_blank" rel="noopener noreferrer" class="text-primary text-sm font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                        View Demo
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,57 @@
+{% from "components/icons.html" import brain, bolt, chart, sparkles %}
+<section id="about" class="relative py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div>
+                <span class="text-primary text-sm font-semibold tracking-wider uppercase">About</span>
+                <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-6">AI-First.<br>Automation-Driven.<br><span class="text-primary">You Scale.</span></h2>
+                <p class="text-light/60 leading-relaxed mb-8">
+                    LeadForge AI is an AI-first digital agency built for the modern era. We don't just build websites — 
+                    we build automated systems that generate leads, close deals, and run operations with minimal human intervention.
+                </p>
+                <div class="space-y-4">
+                    {% set highlights = [
+                        {"icon": "sparkles", "label": "Founder-Led", "desc": "Every project is personally overseen by <span class='text-primary font-semibold'>Islam Ul Haq</span>, founder of LeadForge AI. Quality control at every stage."},
+                        {"icon": "brain", "label": "AI Executive System", "desc": "AI-driven project management, code generation, and automated quality assurance pipeline."},
+                        {"icon": "bolt", "label": "Scalable Infrastructure", "desc": "Systems designed to grow with you. From MVP to enterprise, we build for scale."},
+                    ] %}
+                    {% for item in highlights %}
+                    <div class="flex gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5">
+                        <div class="w-1 bg-primary rounded-full flex-shrink-0"></div>
+                        <div>
+                            <h4 class="font-semibold text-light">{{ item.label }}</h4>
+                            <p class="text-sm text-light/50 mt-1">{{ item.desc | safe }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/10 rounded-3xl blur-3xl"></div>
+                <div class="relative glass-card rounded-3xl p-8 border border-white/10">
+                    <div class="text-center mb-8">
+                        <div class="w-14 h-14 mx-auto mb-4 text-primary">{{ sparkles("w-full h-full") }}</div>
+                        <div class="text-2xl font-bold">Islam Ul Haq</div>
+                        <div class="text-sm text-primary mt-1">Founder & CEO, LeadForge AI</div>
+                    </div>
+                    <div class="space-y-6">
+                        {% set advantages = [
+                            (brain, "AI-Powered Development", "Faster builds, fewer bugs, better results"),
+                            (bolt, "Automation-First", "Systems that run themselves"),
+                            (chart, "Data-Driven", "Every decision backed by analytics"),
+                        ] %}
+                        {% for icon, title, desc in advantages %}
+                        <div class="flex items-center gap-4 p-3 rounded-xl bg-white/[0.03]">
+                            <div class="w-8 h-8 text-primary flex-shrink-0">{{ icon("w-full h-full") }}</div>
+                            <div>
+                                <div class="font-semibold text-sm">{{ title }}</div>
+                                <div class="text-xs text-light/40">{{ desc }}</div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

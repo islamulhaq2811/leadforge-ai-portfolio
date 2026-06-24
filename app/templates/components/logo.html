@@ -1,0 +1,17 @@
+{% macro logo_link(class="") %}
+<a href="/" class="flex items-center gap-3 {{ class }}">
+    <img src="/static/images/logo.png" alt="LeadForge AI" class="h-20 w-auto">
+    <div class="flex items-baseline gap-1">
+        <span class="text-xl font-bold text-light neon-text">LeadForge</span>
+        <span class="text-lg font-light text-primary">AI</span>
+    </div>
+</a>
+{% endmacro %}
+
+{% macro logo_icon(class="") %}
+<div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg shadow-primary/30 {{ class }}">
+    <svg class="w-6 h-6 text-dark" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M13 2L4 14h6l-1 8 10-12h-6l1-8z"/>
+    </svg>
+</div>
+{% endmacro %}

@@ -1,0 +1,36 @@
+{% from "components/icons.html" import search, clipboard, bolt, rocket, shield %}
+<section id="process" class="relative py-24 md:py-32 bg-dark/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="text-primary text-sm font-semibold tracking-wider uppercase">How We Work</span>
+            <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-4">AI-Powered. Human-Approved.</h2>
+            <p class="text-light/50 max-w-2xl mx-auto">A process designed for speed, quality, and results.</p>
+        </div>
+        <div class="relative">
+            <div class="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-primary/50 to-transparent hidden lg:block"></div>
+            <div class="space-y-12 lg:space-y-0 relative">
+                {% set steps = [
+                    {"num": "01", "title": "Discover", "desc": "Deep requirement analysis. We learn your business, goals, and pain points to craft the perfect strategy.", "icon": search},
+                    {"num": "02", "title": "Plan", "desc": "AI-powered strategy creation. We design the architecture, automation flows, and development roadmap.", "icon": clipboard},
+                    {"num": "03", "title": "Build", "desc": "Automated development pipeline. AI-assisted coding with human oversight for quality assurance.", "icon": bolt},
+                    {"num": "04", "title": "Deliver", "desc": "Seamless deployment with thorough testing. Your system goes live with zero downtime.", "icon": rocket},
+                    {"num": "05", "title": "Support", "desc": "Ongoing maintenance, monitoring, and optimization. We keep your systems running at peak performance.", "icon": shield},
+                ] %}
+                {% for step in steps %}
+                <div class="process-step lg:flex items-start gap-8 group">
+                    <div class="flex-shrink-0 lg:w-16 flex items-center justify-start lg:justify-center mb-4 lg:mb-0">
+                        <div class="w-16 h-16 rounded-full bg-dark border-2 border-primary/30 flex items-center justify-center text-primary group-hover:border-primary group-hover:shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
+                            <div class="w-7 h-7">{{ step.icon("w-full h-full") }}</div>
+                        </div>
+                    </div>
+                    <div class="flex-1 lg:pl-8">
+                        <span class="text-4xl font-black text-primary/20 group-hover:text-primary/40 transition-colors">{{ step.num }}</span>
+                        <h3 class="text-2xl font-bold mt-1 mb-2">{{ step.title }}</h3>
+                        <p class="text-light/50 max-w-2xl">{{ step.desc }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

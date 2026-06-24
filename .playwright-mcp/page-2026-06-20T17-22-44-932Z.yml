@@ -1,0 +1,47 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "LeadForge AI" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: LeadForge
+        - generic [ref=e6]: AI
+      - link "Get Started" [ref=e7] [cursor=pointer]:
+        - /url: /#contact
+  - generic [ref=e8]:
+    - text: System Health Monitor
+    - heading "Maintenance & Support" [level=1] [ref=e9]
+    - paragraph [ref=e10]: 24/7 monitoring dashboard with real-time system health and incident response.
+  - generic [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]: 99.97%
+        - generic [ref=e16]: Uptime
+      - generic [ref=e17]:
+        - generic [ref=e18]: <15m
+        - generic [ref=e19]: Response Time
+      - generic [ref=e20]:
+        - generic [ref=e21]: 24/7
+        - generic [ref=e22]: Monitoring
+      - generic [ref=e23]:
+        - generic [ref=e24]: "0"
+        - generic [ref=e25]: Data Loss
+    - generic [ref=e26]:
+      - generic [ref=e27]: System Health Overview
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - generic [ref=e32]: Web Server
+          - generic [ref=e33]: Operational
+        - generic [ref=e34]:
+          - generic [ref=e37]: Database
+          - generic [ref=e38]: Operational
+        - generic [ref=e39]:
+          - generic [ref=e42]: AI Services
+          - generic [ref=e43]: Operational
+        - generic [ref=e44]:
+          - generic [ref=e47]: CDN Cache
+          - generic [ref=e48]: Degraded
+        - generic [ref=e49]:
+          - generic [ref=e52]: Email Service
+          - generic [ref=e53]: Operational
+  - contentinfo [ref=e54]:
+    - paragraph [ref=e55]: © 2026 LeadForge AI — Demo Preview

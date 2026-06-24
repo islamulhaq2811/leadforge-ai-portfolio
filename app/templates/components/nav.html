@@ -1,0 +1,33 @@
+{% from "components/logo.html" import logo_link %}
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 md:h-20">
+            {{ logo_link() }}
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#services" class="nav-link text-sm font-medium text-light/70 hover:text-primary transition-colors">Services</a>
+                <a href="#portfolio" class="nav-link text-sm font-medium text-light/70 hover:text-primary transition-colors">Portfolio</a>
+                <a href="#about" class="nav-link text-sm font-medium text-light/70 hover:text-primary transition-colors">About</a>
+                <a href="#process" class="nav-link text-sm font-medium text-light/70 hover:text-primary transition-colors">Process</a>
+                <a href="#pricing" class="nav-link text-sm font-medium text-light/70 hover:text-primary transition-colors">Pricing</a>
+                <a href="#contact" class="px-5 py-2.5 bg-primary text-dark font-semibold rounded-lg hover:bg-accent transition-all hover:shadow-lg hover:shadow-primary/30 text-sm">
+                    Get Started
+                </a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-light focus:outline-none" aria-label="Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-dark/95 backdrop-blur-xl border-t border-white/5">
+        <div class="px-4 py-4 space-y-3">
+            <a href="#services" class="block text-light/70 hover:text-primary py-2">Services</a>
+            <a href="#portfolio" class="block text-light/70 hover:text-primary py-2">Portfolio</a>
+            <a href="#about" class="block text-light/70 hover:text-primary py-2">About</a>
+            <a href="#process" class="block text-light/70 hover:text-primary py-2">Process</a>
+            <a href="#pricing" class="block text-light/70 hover:text-primary py-2">Pricing</a>
+            <a href="#contact" class="block w-full text-center px-5 py-2.5 bg-primary text-dark font-semibold rounded-lg">Get Started</a>
+        </div>
+    </div>
+</nav>

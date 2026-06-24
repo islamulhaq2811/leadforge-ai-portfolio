@@ -1,0 +1,18 @@
+<section class="relative py-20 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            {% set stats = [
+                {"value": "50+", "label": "Projects Delivered"},
+                {"value": "30+", "label": "Happy Clients"},
+                {"value": "100+", "label": "Systems Automated"},
+                {"value": "$1M+", "label": "Revenue Impact"},
+            ] %}
+            {% for stat in stats %}
+            <div class="stat-item text-center group">
+                <div class="text-4xl md:text-5xl font-black text-primary group-hover:scale-105 transition-transform">{{ stat.value }}</div>
+                <div class="text-sm text-light/40 mt-2">{{ stat.label }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,8 @@
+[    7813ms] [LOG] Found image click areas: 6 @ :2
+[    7814ms] [LOG] openImageModal exists: undefined @ :5
+[    7851ms] ReferenceError: openImageModal is not defined
+    at HTMLDivElement.onclick (http://localhost:8000/:280:187)
+    at eval (eval at evaluate (:303:30), <anonymous>:8:17)
+    at UtilityScript.evaluate (<anonymous>:305:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[    7840ms] [LOG] Modal after click: undefined @ :10

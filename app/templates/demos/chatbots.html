@@ -1,0 +1,51 @@
+{% extends "demos/base-demo.html" %}
+{% block demo_content %}
+<div class="max-w-lg mx-auto">
+    <div class="rounded-2xl border border-white/5 bg-white/[0.02] overflow-hidden">
+        <div class="bg-primary/10 p-4 border-b border-white/5">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-dark font-bold">AI</div>
+                <div>
+                    <div class="text-sm font-semibold">LeadForge Assistant</div>
+                    <div class="text-xs text-light/40">Online</div>
+                </div>
+            </div>
+        </div>
+        <div class="p-4 space-y-4 min-h-[300px]">
+            <div class="flex justify-start">
+                <div class="max-w-[80%] p-3 rounded-2xl rounded-bl-md bg-white/[0.05] border border-white/5 text-sm text-light/70">Hi! How can I help you today?</div>
+            </div>
+            <div class="flex justify-end">
+                <div class="max-w-[80%] p-3 rounded-2xl rounded-br-md bg-primary/20 border border-primary/20 text-sm text-light">I need help with lead generation</div>
+            </div>
+            <div class="flex justify-start">
+                <div class="max-w-[80%] p-3 rounded-2xl rounded-bl-md bg-white/[0.05] border border-white/5 text-sm text-light/70">I can help! I'll qualify leads, book meetings, and update your CRM automatically. What industry are you in?</div>
+            </div>
+            <div class="flex justify-end">
+                <div class="max-w-[80%] p-3 rounded-2xl rounded-br-md bg-primary/20 border border-primary/20 text-sm text-light">SaaS</div>
+            </div>
+            <div class="flex justify-start">
+                <div class="max-w-[80%] p-3 rounded-2xl rounded-bl-md bg-white/[0.05] border border-white/5 text-sm text-light/70">Perfect. I've handled 12,500+ SaaS leads with 89% qualification accuracy. Let's set up a demo!</div>
+            </div>
+        </div>
+        <div class="p-4 border-t border-white/5 flex gap-3">
+            <input type="text" placeholder="Type your message..." disabled class="flex-1 px-4 py-2.5 bg-white/5 border border-white/10 rounded-xl text-sm text-light/30">
+            <button disabled class="px-4 py-2.5 bg-primary/50 text-dark text-sm font-semibold rounded-xl">Send</button>
+        </div>
+    </div>
+    <div class="mt-4 grid grid-cols-3 gap-3 text-center text-xs text-light/30">
+        <div class="p-3 rounded-xl border border-white/5">
+            <div class="text-lg font-bold text-primary">89%</div>
+            <div>Accuracy</div>
+        </div>
+        <div class="p-3 rounded-xl border border-white/5">
+            <div class="text-lg font-bold text-primary">24/7</div>
+            <div>Availability</div>
+        </div>
+        <div class="p-3 rounded-xl border border-white/5">
+            <div class="text-lg font-bold text-primary">35%</div>
+            <div>Cost Savings</div>
+        </div>
+    </div>
+</div>
+{% endblock %}

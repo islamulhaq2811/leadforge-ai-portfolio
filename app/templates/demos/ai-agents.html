@@ -1,0 +1,43 @@
+{% extends "demos/base-demo.html" %}
+{% block demo_content %}
+<div class="grid md:grid-cols-2 gap-8">
+    <div class="rounded-2xl border border-white/5 p-6">
+        <div class="flex items-center gap-3 mb-6">
+            <div class="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
+            <span class="text-sm font-semibold">Agent Status: Active</span>
+        </div>
+        <div class="space-y-3">
+            <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-xs text-primary font-bold flex-shrink-0">AI</div>
+                <div class="flex-1 p-3 rounded-lg bg-white/[0.03] border border-white/5 text-sm text-light/70">Analyzing your business data...</div>
+            </div>
+            <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-xs text-primary font-bold flex-shrink-0">AI</div>
+                <div class="flex-1 p-3 rounded-lg bg-white/[0.03] border border-white/5 text-sm text-light/70">Identified 3 automation opportunities in your workflow.</div>
+            </div>
+            <div class="flex gap-3">
+                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-xs text-primary font-bold flex-shrink-0">AI</div>
+                <div class="flex-1 p-3 rounded-lg bg-white/[0.03] border border-white/5 text-sm text-light/70">Generated optimized pipeline. Estimated time saved: 40 hrs/week.</div>
+            </div>
+        </div>
+    </div>
+    <div class="space-y-4">
+        <div class="p-4 rounded-xl border border-white/5 flex items-center justify-between">
+            <span class="text-sm text-light/60">Tasks Automated</span>
+            <span class="text-lg font-bold text-primary">1,247</span>
+        </div>
+        <div class="p-4 rounded-xl border border-white/5 flex items-center justify-between">
+            <span class="text-sm text-light/60">Errors</span>
+            <span class="text-lg font-bold text-green-400">0</span>
+        </div>
+        <div class="p-4 rounded-xl border border-white/5 flex items-center justify-between">
+            <span class="text-sm text-light/60">Uptime</span>
+            <span class="text-lg font-bold text-primary">99.97%</span>
+        </div>
+        <div class="p-4 rounded-xl border border-white/5 flex items-center justify-between">
+            <span class="text-sm text-light/60">Avg. Response</span>
+            <span class="text-lg font-bold text-primary">0.4s</span>
+        </div>
+    </div>
+</div>
+{% endblock %}

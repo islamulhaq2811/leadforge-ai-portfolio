@@ -1,0 +1,446 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]: LeadForge
+        - generic [ref=e7]: AI
+      - generic [ref=e8]:
+        - link "Services" [ref=e9] [cursor=pointer]:
+          - /url: "#services"
+        - link "Portfolio" [ref=e10] [cursor=pointer]:
+          - /url: "#portfolio"
+        - link "About" [ref=e11] [cursor=pointer]:
+          - /url: "#about"
+        - link "Process" [ref=e12] [cursor=pointer]:
+          - /url: "#process"
+        - link "Pricing" [ref=e13] [cursor=pointer]:
+          - /url: "#pricing"
+        - link "Get Started" [ref=e14] [cursor=pointer]:
+          - /url: "#contact"
+  - generic [ref=e15]:
+    - generic [ref=e21]:
+      - generic [ref=e22]: AI-Powered Digital Agency
+      - heading "WE BUILD. AUTOMATE. YOU SCALE." [level=1] [ref=e24]:
+        - text: WE BUILD.
+        - generic [ref=e25]: AUTOMATE.
+        - text: YOU SCALE.
+      - paragraph [ref=e26]: AI-first digital agency for websites, automation & SaaS systems. We build the infrastructure, you grow the business.
+      - generic [ref=e27]:
+        - link "Get Free Consultation" [ref=e28] [cursor=pointer]:
+          - /url: "#contact"
+          - text: Get Free Consultation
+          - img [ref=e29]
+        - link "View Portfolio" [ref=e31] [cursor=pointer]:
+          - /url: "#portfolio"
+          - text: View Portfolio
+          - img [ref=e32]
+    - img [ref=e35]
+  - generic [ref=e38]:
+    - generic [ref=e39]:
+      - text: What We Do
+      - heading "Solutions That Drive Growth" [level=2] [ref=e40]
+      - paragraph [ref=e41]: From websites to AI agents — we build systems that work while you focus on what matters.
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - img [ref=e45]
+        - heading "Website Development" [level=3] [ref=e47]
+        - paragraph [ref=e48]: High-performance websites with modern stacks. Fast, responsive, conversion-optimized.
+        - link "View Demo" [ref=e51] [cursor=pointer]:
+          - /url: /demo/web-development
+          - text: View Demo
+          - img [ref=e52]
+      - generic [ref=e54]:
+        - img [ref=e56]
+        - heading "AI Agents & Automation" [level=3] [ref=e59]
+        - paragraph [ref=e60]: Custom AI agents that automate workflows, handle tasks, and scale your operations.
+        - link "View Demo" [ref=e63] [cursor=pointer]:
+          - /url: /demo/ai-agents
+          - text: View Demo
+          - img [ref=e64]
+      - generic [ref=e66]:
+        - img [ref=e68]
+        - heading "Chatbots" [level=3] [ref=e70]
+        - paragraph [ref=e71]: Intelligent conversational AI for customer support, lead gen, and internal tools.
+        - link "View Demo" [ref=e74] [cursor=pointer]:
+          - /url: /demo/chatbots
+          - text: View Demo
+          - img [ref=e75]
+      - generic [ref=e77]:
+        - img [ref=e79]
+        - heading "SaaS MVP Development" [level=3] [ref=e81]
+        - paragraph [ref=e82]: Rapid SaaS prototyping and development. From idea to working product in weeks.
+        - link "View Demo" [ref=e85] [cursor=pointer]:
+          - /url: /demo/saas-mvp
+          - text: View Demo
+          - img [ref=e86]
+      - generic [ref=e88]:
+        - img [ref=e90]
+        - heading "Business Automation" [level=3] [ref=e92]
+        - paragraph [ref=e93]: End-to-end automation for repetitive tasks, data processing, and biz operations.
+        - link "View Demo" [ref=e96] [cursor=pointer]:
+          - /url: /demo/business-automation
+          - text: View Demo
+          - img [ref=e97]
+      - generic [ref=e99]:
+        - img [ref=e101]
+        - heading "Maintenance & Support" [level=3] [ref=e103]
+        - paragraph [ref=e104]: Ongoing support, monitoring, and optimization to keep your systems running.
+        - link "View Demo" [ref=e107] [cursor=pointer]:
+          - /url: /demo/maintenance-support
+          - text: View Demo
+          - img [ref=e108]
+  - generic [ref=e111]:
+    - generic [ref=e112]:
+      - text: Our Work
+      - heading "Work That Speaks For Itself" [level=2] [ref=e113]
+      - paragraph [ref=e114]: Real projects, real results. See what we've built for our clients.
+    - generic [ref=e115]:
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - img [ref=e119]
+          - heading "Website Development" [level=3] [ref=e121]
+        - generic [ref=e123]:
+          - img "Modern Agency Landing Page" [ref=e126]
+          - generic [ref=e128]:
+            - text: Landing Page
+            - heading "Modern Agency Landing Page" [level=4] [ref=e129]
+            - paragraph [ref=e130]: Clean, conversion-optimized landing page with hero section, features grid, and footer.
+            - link "View Demo" [ref=e131] [cursor=pointer]:
+              - /url: /demo/web-development
+              - text: View Demo
+              - img [ref=e132]
+      - generic [ref=e134]:
+        - generic [ref=e135]:
+          - img [ref=e137]
+          - heading "Login Portal" [level=3] [ref=e139]
+        - generic [ref=e141]:
+          - img "Secure Client Login Portal" [ref=e144]
+          - generic [ref=e146]:
+            - text: Authentication
+            - heading "Secure Client Login Portal" [level=4] [ref=e147]
+            - paragraph [ref=e148]: Modern authentication interface with social login, form validation, and responsive design.
+            - link "View Demo" [ref=e149] [cursor=pointer]:
+              - /url: /demo/login-portal
+              - text: View Demo
+              - img [ref=e150]
+  - generic [ref=e154]:
+    - generic [ref=e155]:
+      - text: About
+      - heading "AI-First. Automation-Driven. You Scale." [level=2] [ref=e156]:
+        - text: AI-First.
+        - text: Automation-Driven.
+        - text: You Scale.
+      - paragraph [ref=e157]: LeadForge AI is an AI-first digital agency built for the modern era. We don't just build websites — we build automated systems that generate leads, close deals, and run operations with minimal human intervention.
+      - generic [ref=e158]:
+        - generic [ref=e161]:
+          - heading "Founder-Led" [level=4] [ref=e162]
+          - paragraph [ref=e163]: Every project is personally overseen by the founding team. Quality control at every stage.
+        - generic [ref=e166]:
+          - heading "AI Executive System" [level=4] [ref=e167]
+          - paragraph [ref=e168]: AI-driven project management, code generation, and automated quality assurance pipeline.
+        - generic [ref=e171]:
+          - heading "Scalable Infrastructure" [level=4] [ref=e172]
+          - paragraph [ref=e173]: Systems designed to grow with you. From MVP to enterprise, we build for scale.
+    - generic [ref=e176]:
+      - generic [ref=e177]:
+        - img [ref=e179]
+        - heading "The LeadForge Advantage" [level=3] [ref=e181]:
+          - text: The LeadForge
+          - text: Advantage
+      - generic [ref=e182]:
+        - generic [ref=e183]:
+          - img [ref=e185]
+          - generic [ref=e187]:
+            - generic [ref=e188]: AI-Powered Development
+            - generic [ref=e189]: Faster builds, fewer bugs, better results
+        - generic [ref=e190]:
+          - img [ref=e192]
+          - generic [ref=e194]:
+            - generic [ref=e195]: Automation-First
+            - generic [ref=e196]: Systems that run themselves
+        - generic [ref=e197]:
+          - img [ref=e199]
+          - generic [ref=e201]:
+            - generic [ref=e202]: Data-Driven
+            - generic [ref=e203]: Every decision backed by analytics
+  - generic [ref=e205]:
+    - generic [ref=e206]:
+      - text: How We Work
+      - heading "AI-Powered. Human-Approved." [level=2] [ref=e207]
+      - paragraph [ref=e208]: A process designed for speed, quality, and results.
+    - generic [ref=e211]:
+      - generic [ref=e212]:
+        - img [ref=e216]
+        - generic [ref=e218]:
+          - text: "01"
+          - heading "Discover" [level=3] [ref=e219]
+          - paragraph [ref=e220]: Deep requirement analysis. We learn your business, goals, and pain points to craft the perfect strategy.
+      - generic [ref=e221]:
+        - img [ref=e225]
+        - generic [ref=e227]:
+          - text: "02"
+          - heading "Plan" [level=3] [ref=e228]
+          - paragraph [ref=e229]: AI-powered strategy creation. We design the architecture, automation flows, and development roadmap.
+      - generic [ref=e230]:
+        - img [ref=e234]
+        - generic [ref=e236]:
+          - text: "03"
+          - heading "Build" [level=3] [ref=e237]
+          - paragraph [ref=e238]: Automated development pipeline. AI-assisted coding with human oversight for quality assurance.
+      - generic [ref=e239]:
+        - img [ref=e243]
+        - generic [ref=e245]:
+          - text: "04"
+          - heading "Deliver" [level=3] [ref=e246]
+          - paragraph [ref=e247]: Seamless deployment with thorough testing. Your system goes live with zero downtime.
+      - generic [ref=e248]:
+        - img [ref=e252]
+        - generic [ref=e254]:
+          - text: "05"
+          - heading "Support" [level=3] [ref=e255]
+          - paragraph [ref=e256]: Ongoing maintenance, monitoring, and optimization. We keep your systems running at peak performance.
+  - generic [ref=e258]:
+    - generic [ref=e259]:
+      - text: Pricing
+      - heading "Transparent Pricing" [level=2] [ref=e260]
+      - paragraph [ref=e261]: Fixed-price packages with no hidden fees. Custom quotes for complex projects.
+    - generic [ref=e262]:
+      - generic [ref=e263]:
+        - generic [ref=e264]: Starter Website
+        - generic [ref=e265]: $100+
+        - generic [ref=e266]: $100 – $500
+        - paragraph [ref=e267]: Simple landing page or personal site
+        - list [ref=e268]:
+          - listitem [ref=e269]:
+            - img [ref=e270]
+            - text: 5 Pages
+          - listitem [ref=e272]:
+            - img [ref=e273]
+            - text: Responsive Design
+          - listitem [ref=e275]:
+            - img [ref=e276]
+            - text: Basic SEO
+          - listitem [ref=e278]:
+            - img [ref=e279]
+            - text: Contact Form
+          - listitem [ref=e281]:
+            - img [ref=e282]
+            - text: 1 Revision
+        - link "Get Started" [ref=e284] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e285]:
+        - generic [ref=e286]: Most Popular
+        - generic [ref=e287]: Business Website
+        - generic [ref=e288]: $500+
+        - generic [ref=e289]: $500 – $1,500
+        - paragraph [ref=e290]: Professional multi-page business site
+        - list [ref=e291]:
+          - listitem [ref=e292]:
+            - img [ref=e293]
+            - text: Up to 10 Pages
+          - listitem [ref=e295]:
+            - img [ref=e296]
+            - text: Custom Design
+          - listitem [ref=e298]:
+            - img [ref=e299]
+            - text: Advanced SEO
+          - listitem [ref=e301]:
+            - img [ref=e302]
+            - text: CMS Integration
+          - listitem [ref=e304]:
+            - img [ref=e305]
+            - text: Analytics Setup
+          - listitem [ref=e307]:
+            - img [ref=e308]
+            - text: 3 Revisions
+        - link "Get Started" [ref=e310] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e311]:
+        - generic [ref=e312]: AI Chatbot
+        - generic [ref=e313]: $1,000+
+        - generic [ref=e314]: $1,000 – $3,000
+        - paragraph [ref=e315]: Intelligent conversational AI for your biz
+        - list [ref=e316]:
+          - listitem [ref=e317]:
+            - img [ref=e318]
+            - text: Custom Knowledge Base
+          - listitem [ref=e320]:
+            - img [ref=e321]
+            - text: Multi-Platform
+          - listitem [ref=e323]:
+            - img [ref=e324]
+            - text: Lead Capture
+          - listitem [ref=e326]:
+            - img [ref=e327]
+            - text: Analytics Dashboard
+          - listitem [ref=e329]:
+            - img [ref=e330]
+            - text: 30-Day Support
+        - link "Get Started" [ref=e332] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e333]:
+        - generic [ref=e334]: Automation System
+        - generic [ref=e335]: $3,000+
+        - generic [ref=e336]: $3,000 – $10,000+
+        - paragraph [ref=e337]: End-to-end business automation
+        - list [ref=e338]:
+          - listitem [ref=e339]:
+            - img [ref=e340]
+            - text: Custom Workflow Design
+          - listitem [ref=e342]:
+            - img [ref=e343]
+            - text: API Integrations
+          - listitem [ref=e345]:
+            - img [ref=e346]
+            - text: Data Pipeline
+          - listitem [ref=e348]:
+            - img [ref=e349]
+            - text: Admin Dashboard
+          - listitem [ref=e351]:
+            - img [ref=e352]
+            - text: Documentation
+          - listitem [ref=e354]:
+            - img [ref=e355]
+            - text: 60-Day Support
+        - link "Get Started" [ref=e357] [cursor=pointer]:
+          - /url: "#contact"
+  - generic [ref=e360]:
+    - generic [ref=e361]:
+      - generic [ref=e362]: 50+
+      - generic [ref=e363]: Projects Delivered
+    - generic [ref=e364]:
+      - generic [ref=e365]: 30+
+      - generic [ref=e366]: Happy Clients
+    - generic [ref=e367]:
+      - generic [ref=e368]: 100+
+      - generic [ref=e369]: Systems Automated
+    - generic [ref=e370]:
+      - generic [ref=e371]: $1M+
+      - generic [ref=e372]: Revenue Impact
+  - generic [ref=e374]:
+    - generic [ref=e375]:
+      - text: Testimonials
+      - heading "What Our Clients Say" [level=2] [ref=e376]
+    - generic [ref=e377]:
+      - generic [ref=e378]:
+        - text: "\""
+        - generic [ref=e379]:
+          - img [ref=e380]
+          - img [ref=e382]
+          - img [ref=e384]
+          - img [ref=e386]
+          - img [ref=e388]
+        - paragraph [ref=e390]: “LeadForge built our entire automation pipeline. We've cut operational costs by 60% and our team can finally focus on growth.”
+        - generic [ref=e391]:
+          - generic [ref=e392]: S
+          - generic [ref=e393]:
+            - generic [ref=e394]: Sarah Chen
+            - generic [ref=e395]: CEO, TechFlow Inc.
+      - generic [ref=e396]:
+        - text: "\""
+        - generic [ref=e397]:
+          - img [ref=e398]
+          - img [ref=e400]
+          - img [ref=e402]
+          - img [ref=e404]
+          - img [ref=e406]
+        - paragraph [ref=e408]: “The AI chatbot they built handles 85% of our customer inquiries. Best investment we've made this year.”
+        - generic [ref=e409]:
+          - generic [ref=e410]: M
+          - generic [ref=e411]:
+            - generic [ref=e412]: Marcus Rivera
+            - generic [ref=e413]: Founder, ScaleUp Labs
+      - generic [ref=e414]:
+        - text: "\""
+        - generic [ref=e415]:
+          - img [ref=e416]
+          - img [ref=e418]
+          - img [ref=e420]
+          - img [ref=e422]
+          - img [ref=e424]
+        - paragraph [ref=e426]: “Professional, fast, and results-driven. The SaaS dashboard they delivered exceeded our expectations.”
+        - generic [ref=e427]:
+          - generic [ref=e428]: E
+          - generic [ref=e429]:
+            - generic [ref=e430]: Emily Torres
+            - generic [ref=e431]: CTO, DataSync Corp
+  - generic [ref=e434]:
+    - generic [ref=e435]:
+      - text: Contact
+      - heading "Let's Build Your Next Big Thing" [level=2] [ref=e436]:
+        - text: Let's Build Your
+        - text: Next Big Thing
+      - paragraph [ref=e437]: Ready to scale your business with AI-powered systems? Tell us about your project and we'll create a custom strategy.
+      - generic [ref=e438]:
+        - generic [ref=e439]:
+          - img [ref=e441]
+          - text: hello@leadforge.ai
+        - generic [ref=e443]:
+          - img [ref=e445]
+          - text: Remote-First — Available Globally
+    - generic [ref=e449]:
+      - generic [ref=e450]:
+        - generic [ref=e451]:
+          - generic [ref=e452]: Name
+          - textbox [ref=e453]
+        - generic [ref=e454]:
+          - generic [ref=e455]: Email
+          - textbox [ref=e456]
+      - generic [ref=e457]:
+        - generic [ref=e458]: Project Type
+        - combobox [ref=e459]:
+          - option "Select a service" [disabled] [selected]
+          - option "Website Development"
+          - option "AI Agents & Automation"
+          - option "Chatbot"
+          - option "SaaS MVP"
+          - option "Business Automation"
+          - option "Other"
+      - generic [ref=e460]:
+        - generic [ref=e461]: Message
+        - textbox "Tell us about your project..." [ref=e462]
+      - button "Start Project" [ref=e463] [cursor=pointer]
+  - contentinfo [ref=e464]:
+    - generic [ref=e465]:
+      - generic [ref=e466]:
+        - generic [ref=e467]:
+          - generic [ref=e468]:
+            - generic [ref=e469]: LeadForge
+            - generic [ref=e470]: AI
+          - paragraph [ref=e471]: AI-first digital agency building websites, automation & SaaS systems that scale your business.
+        - generic [ref=e472]:
+          - heading "Services" [level=4] [ref=e473]
+          - list [ref=e474]:
+            - listitem [ref=e475]:
+              - link "Web Development" [ref=e476] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e477]:
+              - link "AI Agents" [ref=e478] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e479]:
+              - link "Chatbots" [ref=e480] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e481]:
+              - link "SaaS MVP" [ref=e482] [cursor=pointer]:
+                - /url: "#services"
+        - generic [ref=e483]:
+          - heading "Connect" [level=4] [ref=e484]
+          - list [ref=e485]:
+            - listitem [ref=e486]:
+              - link "LinkedIn" [ref=e487] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e488]:
+              - link "GitHub" [ref=e489] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e490]:
+              - link "Email" [ref=e491] [cursor=pointer]:
+                - /url: mailto:hello@leadforge.ai
+      - generic [ref=e492]:
+        - paragraph [ref=e493]: © 2026 LeadForge AI. All rights reserved.
+        - paragraph [ref=e494]: Built with AI. Powered by Innovation.
+  - generic:
+    - generic:
+      - generic:
+        - heading [level=3]
+        - button:
+          - img

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadForge AI — AI-Powered Digital Agency</title>
+    <meta name="description" content="AI-first digital agency for websites, automation & SaaS systems.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00A3FF',
+                        accent: '#1E90FF',
+                        dark: '#05060A',
+                        light: '#E6F1FF',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" type="image/png" href="/static/images/logo.png">
+</head>
+<body class="bg-dark text-light font-sans antialiased">
+    {% block content %}{% endblock %}
+
+    <!-- Image Preview Modal HTML -->
+    <div class="image-modal-overlay" id="image-modal">
+        <div class="image-modal-content">
+            <button class="image-modal-close" id="image-modal-close">&times;</button>
+            <img id="image-modal-img" src="" alt="">
+            <div class="image-modal-caption" id="image-modal-caption"></div>
+        </div>
+    </div>
+
+    <!-- Case Study Modal HTML -->
+    <div class="modal-overlay" id="case-study-modal">
+        <div class="modal-content">
+            <div class="flex items-center justify-between mb-6">
+                <h3 class="text-2xl font-bold" id="modal-title"></h3>
+                <button id="modal-close" class="text-light/50 hover:text-light transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <div id="modal-body" class="text-light/60 leading-relaxed"></div>
+        </div>
+    </div>
+
+    <script>
+// ===== Sticky Navbar =====
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// ===== Mobile Menu =====
+const menuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuBtn?.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
+
+mobileMenu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+    });
+});
+
+// ===== Scroll Animations =====
+const animateElements = () => {
+    const elements = document.querySelectorAll(
+        '.service-card, .project-card, .process-step, .stat-item, .testimonial-card, ' +
+        '#about h2, #about p, .glass-card, #pricing .rounded-2xl, #contact h2'
+    );
+    elements.forEach(el => el.classList.add('fade-in'));
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    elements.forEach(el => observer.observe(el));
+};
+document.addEventListener('DOMContentLoaded', animateElements);
+
+// ===== Image Preview Modal =====
+const imageModal = document.getElementById('image-modal');
+const imageModalImg = document.getElementById('image-modal-img');
+const imageModalCaption = document.getElementById('image-modal-caption');
+const imageModalClose = document.getElementById('image-modal-close');
+
+function openImageModal(src, title) {
+    imageModalImg.src = src;
+    imageModalCaption.textContent = title;
+    imageModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeImageModal() {
+    imageModal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+imageModalClose?.addEventListener('click', closeImageModal);
+imageModal?.addEventListener('click', (e) => {
+    if (e.target === imageModal) closeImageModal();
+});
+
+document.addEventListener('click', (e) => {
+    const trigger = e.target.closest('.image-preview-trigger');
+    if (trigger) {
+        openImageModal(trigger.dataset.src, trigger.dataset.title);
+    }
+});
+
+// ===== Case Study Modal =====
+const modal = document.getElementById('case-study-modal');
+const modalTitle = document.getElementById('modal-title');
+const modalBody = document.getElementById('modal-body');
+const modalClose = document.getElementById('modal-close');
+
+const caseStudies = {
+    'AI Customer Support Chatbot': 'This AI-powered chatbot was built for a high-growth SaaS company handling 10,000+ customer inquiries monthly. Using GPT-4 fine-tuned on their knowledge base, it achieved 90% first-response resolution rate. The system integrates with Zendesk, Slack, and their internal CRM, reducing support team workload by 70%.',
+    'Invoice Automation System': 'An end-to-end invoice processing automation for a mid-size accounting firm. The system uses OCR + AI to extract data from PDF invoices, validates against purchase orders, routes for approval, and triggers payments. Processing time dropped from 45 minutes to under 3 minutes per invoice.',
+    'Real-Time Analytics Dashboard': 'Built for a series of early-stage startups needing live KPI tracking. The dashboard pulls from multiple data sources (Stripe, Google Analytics, social platforms) and provides AI-generated insights and recommendations. Three startups currently use it for daily decision-making.',
+    'Multi-Vendor E-Commerce': 'A scalable marketplace platform connecting vendors with customers. Features include automated vendor onboarding, commission tracking, payment splitting, inventory management across warehouses, and AI-powered product recommendations. Currently processing 5,000+ orders monthly.',
+};
+
+document.querySelectorAll('.case-study-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        modalTitle.textContent = btn.dataset.project;
+        modalBody.textContent = caseStudies[btn.dataset.project] || 'Case study details coming soon.';
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+modalClose?.addEventListener('click', closeModal);
+modal?.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+});
+
+function closeModal() {
+    modal?.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeImageModal();
+        closeModal();
+    }
+});
+
+// ===== Contact Form =====
+const contactForm = document.getElementById('contact-form');
+contactForm?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(contactForm).entries());
+    const btn = contactForm.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    try {
+        const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+        });
+        const json = await res.json();
+        const toast = document.createElement('div');
+        toast.className = 'toast show';
+        toast.textContent = json.ok ? '✓ ' + json.message : '✗ ' + json.message;
+        document.body.appendChild(toast);
+        if (json.ok) contactForm.reset();
+    } catch {
+        const toast = document.createElement('div');
+        toast.className = 'toast show';
+        toast.textContent = '✗ Network error. Please try again.';
+        document.body.appendChild(toast);
+    }
+    btn.disabled = false;
+    btn.textContent = 'Start Project';
+    setTimeout(() => {
+        const t = document.querySelector('.toast.show');
+        if (t) { t.classList.remove('show'); setTimeout(() => t.remove(), 400); }
+    }, 4000);
+});
+    </script>
+</body>
+</html>

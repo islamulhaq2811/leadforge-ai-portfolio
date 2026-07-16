@@ -10,3 +10,5 @@ node_modules/
 *.png
 !Frontend/static/images/*.png
 style.css.bak
+
+.vercel

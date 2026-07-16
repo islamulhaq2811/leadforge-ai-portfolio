@@ -3,14 +3,15 @@
         <div class="text-center mb-16">
             <span class="text-primary text-sm font-semibold tracking-wider uppercase">Pricing</span>
             <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-4">Transparent Pricing</h2>
-            <p class="text-light/50 max-w-2xl mx-auto">Fixed-price packages with no hidden fees. Custom quotes for complex projects.</p>
+                <p class="text-light/50 max-w-2xl mx-auto">Fixed-price packages with no hidden fees. Custom quotes for complex projects.</p>
+                <p class="text-xs text-light/30 mt-2">* Domain registration and hosting charges are separate from development cost.</p>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {% set plans = [
-                {"name": "Starter Website", "price": "$100", "range": "$100 – $500", "desc": "Simple landing page or personal site", "features": ["5 Pages", "Responsive Design", "Basic SEO", "Contact Form", "1 Revision"], "popular": false},
-                {"name": "Business Website", "price": "$500", "range": "$500 – $1,500", "desc": "Professional multi-page business site", "features": ["Up to 10 Pages", "Custom Design", "Advanced SEO", "CMS Integration", "Analytics Setup", "3 Revisions"], "popular": true},
-                {"name": "AI Chatbot", "price": "$1,000", "range": "$1,000 – $3,000", "desc": "Intelligent conversational AI for your biz", "features": ["Custom Knowledge Base", "Multi-Platform", "Lead Capture", "Analytics Dashboard", "30-Day Support"], "popular": false},
-                {"name": "Automation System", "price": "$3,000", "range": "$3,000 – $10,000+", "desc": "End-to-end business automation", "features": ["Custom Workflow Design", "API Integrations", "Data Pipeline", "Admin Dashboard", "Documentation", "60-Day Support"], "popular": false},
+                {"name": "Starter Website", "price": "$100", "pkr": "PKR 15,000", "range": "$100 – $500", "desc": "Simple landing page or personal site", "features": ["5 Pages", "Responsive Design", "Basic SEO", "Contact Form", "1 Revision"], "popular": false},
+                {"name": "Business Website", "price": "$500", "pkr": "PKR 75,000", "range": "$500 – $1,500", "desc": "Professional multi-page business site", "features": ["Up to 10 Pages", "Custom Design", "Advanced SEO", "CMS Integration", "Analytics Setup", "3 Revisions"], "popular": true},
+                {"name": "AI Chatbot", "price": "$1,000", "pkr": "PKR 150,000", "range": "$1,000 – $3,000", "desc": "Intelligent conversational AI for your biz", "features": ["Custom Knowledge Base", "Multi-Platform", "Lead Capture", "Analytics Dashboard", "30-Day Support"], "popular": false},
+                {"name": "Automation System", "price": "$3,000", "pkr": "PKR 450,000", "range": "$3,000 – $10,000+", "desc": "End-to-end business automation", "features": ["Custom Workflow Design", "API Integrations", "Data Pipeline", "Admin Dashboard", "Documentation", "60-Day Support"], "popular": false},
             ] %}
             {% for plan in plans %}
             <div class="relative rounded-2xl border {% if plan.popular %}border-primary/50 bg-primary/[0.03]{% else %}border-white/5 bg-white/[0.02]{% endif %} p-6 hover:border-primary/30 transition-all duration-300 hover:-translate-y-1">
@@ -19,6 +20,7 @@
                 {% endif %}
                 <div class="text-sm font-semibold text-light/70 mb-2">{{ plan.name }}</div>
                 <div class="text-3xl font-black text-primary mb-1">{{ plan.price }}<span class="text-sm font-normal text-light/30">+</span></div>
+                <div class="text-xs text-primary/60 mb-1">{{ plan.pkr }}</div>
                 <div class="text-xs text-light/40 mb-4">{{ plan.range }}</div>
                 <p class="text-sm text-light/50 mb-6">{{ plan.desc }}</p>
                 <ul class="space-y-3 mb-8">

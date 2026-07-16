@@ -1,0 +1,13 @@
+{
+  "name": "leadforge-ai",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:css": "tailwindcss -i ./Frontend/static/css/src/main.css -o ./Frontend/static/css/style.css --watch",
+    "build:css": "tailwindcss -i ./Frontend/static/css/src/main.css -o ./Frontend/static/css/style.css --minify",
+    "build": "npm run build:css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
